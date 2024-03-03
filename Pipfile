@@ -11,6 +11,8 @@ transformers = "*"
 nltk = "*"
 pandas = "*"
 numpy = "*"
+scikit-learn = "*"
+regex = "*"
 
 [dev-packages]
 
