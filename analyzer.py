@@ -20,7 +20,7 @@ def analyze_job_description(job_description):
         )
     ]
     # Use LLM to extract keywords
-    nlp = pipeline("fill-mask", model="bert-base-uncased")
+    nlp = pipeline("fill-mask", model="bert-base-uncased", device="cpu")
     masked_description = ' '.join([f'[MASK] {word} [MASK]' for word in filtered_words])
     predictions_list = nlp(masked_description)
 
