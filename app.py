@@ -34,7 +34,7 @@ def main():
         counts = [count.toarray()[0][0] if isinstance(count, np.matrix) else count for count in result.values()]
 
         # Create a DataFrame from the lists
-        df = pd.DataFrame({"Word": words, "Count": counts})
+        df = pd.DataFrame({"Word": words, "Score": counts})
         df['Count'] = df['Count'].fillna(0)
 
         # Sort the DataFrame based on 'Count' in descending order
@@ -43,6 +43,8 @@ def main():
         # Create and display a table
         st.write("Keywords and Counts:")
         st.dataframe(df, use_container_width=True)
+
+        st.subheading('Your job description with keywords highlighted.')
 
         highlighted_text = highlight_words_in_text(job_description, words, background="#FF0", color="black")
         st.markdown(str(highlighted_text), unsafe_allow_html=True)
