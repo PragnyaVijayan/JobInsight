@@ -3,6 +3,8 @@ import streamlit as st
 from analyzer import analyze_job_description
 import pandas as pd
 import numpy as np
+from annotated_text import annotated_text
+from highlighter import highlight_words_in_text
 
 import nltk
 from nltk.corpus import stopwords
@@ -40,7 +42,10 @@ def main():
 
         # Create and display a table
         st.write("Keywords and Counts:")
-        st.table(df)
+        st.dataframe(df, use_container_width=True)
+
+        highlighted_text = highlight_words_in_text(job_description, words, background="#FF0", color="black")
+        st.markdown(str(highlighted_text), unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()

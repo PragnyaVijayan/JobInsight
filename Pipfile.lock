@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ae31ed66c7ae6ebe223f7562aae69f5707e45a8e39e2838021668f4ed5eba227"
+            "sha256": "756145b0a567f4a03b2a6208bc5cccca1ae6a58fbd12a38e651879b3209e2788"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -192,6 +192,14 @@
             "markers": "python_version >= '3.7'",
             "version": "==3.1.42"
         },
+        "htbuilder": {
+            "hashes": [
+                "sha256:5bb707221a0e2162e406c9ecf7bcc9efa9ad590c9f2180149440415f43a10bb5",
+                "sha256:9979a4fb6e50ce732bf6f6bc0441039dcaa3a3fc70689d8f38f601ed8a1aeec0"
+            ],
+            "markers": "python_version >= '3.5'",
+            "version": "==0.6.2"
+        },
         "idna": {
             "hashes": [
                 "sha256:9ecdbbd083b06798ae1e86adcbfe8ab1479cf864e4ee30fe4e46a003d12491ca",
@@ -322,6 +330,14 @@
             "markers": "python_version >= '3.7'",
             "version": "==0.1.2"
         },
+        "more-itertools": {
+            "hashes": [
+                "sha256:686b06abe565edfab151cb8fd385a05651e1fdf8f0a14191e4439283421f8684",
+                "sha256:8fccb480c43d3e99a00087634c06dd02b0d50fbf088b380de5a41a015ec239e1"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==10.2.0"
+        },
         "mpmath": {
             "hashes": [
                 "sha256:7a28eb2a9774d00c7bc92411c19a89209d5da7c4c9a9e227be8330a23a25b91f",
@@ -385,7 +401,7 @@
                 "sha256:f870204a840a60da0b12273ef34f7051e98c3b5961b61b0c2c1be6dfd64fbcd3",
                 "sha256:ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f"
             ],
-            "markers": "python_version >= '3.9'",
+            "markers": "python_version < '3.11'",
             "version": "==1.26.4"
         },
         "packaging": {
@@ -898,6 +914,15 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==5.0.1"
+        },
+        "st-annotated-text": {
+            "hashes": [
+                "sha256:0a2a72903a5752a55c0acef71bdf92cd225a23a8ae4135cfc213c4538bed432f",
+                "sha256:a8ccb9a35c078ef22c6ebb244a9a0605ce27f1fd699f55939497669081b79630"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.5'",
+            "version": "==4.0.1"
         },
         "streamlit": {
             "hashes": [

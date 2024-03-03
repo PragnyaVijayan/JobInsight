@@ -9,9 +9,16 @@ import re
 def analyze_job_description(job_description):
     stop_words = set(stopwords.words('english'))
     words = nltk.word_tokenize(job_description)
-    filtered_words = [word.lower() for word in words if word.isalnum() and word.lower() not in stop_words]
-    filtered_words = [word.lower() for word in words if re.match('^[a-zA-Z]+$', word) and word.lower() not in filtered_words]
+    special_chars = r'[?.\'"&^()!|]'
 
+    filtered_words = [
+        word for word in words
+        if (
+            re.match('^[a-zA-Z]+$', word) and
+            word.lower() not in stop_words and
+            not re.search(special_chars, word)
+        )
+    ]
     # Use LLM to extract keywords
     nlp = pipeline("fill-mask", model="bert-base-uncased")
     masked_description = ' '.join([f'[MASK] {word} [MASK]' for word in filtered_words])
@@ -46,6 +53,8 @@ def analyze_job_description(job_description):
 
 
     # Combine keywords from LLM and TF-IDF
-    all_keywords = {**keywords_llm, **keywords_tfidf}
+    #all_keywords = {**keywords_llm, **keywords_tfidf}
+    all_keywords = {**keywords_tfidf}
+
 
     return all_keywords

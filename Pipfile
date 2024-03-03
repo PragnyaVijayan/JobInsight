@@ -9,6 +9,7 @@ scikit-learn = "*"
 nltk = "*"
 torch = "*"
 pandas = "*"
+st-annotated-text = "*"
 
 [dev-packages]
 
