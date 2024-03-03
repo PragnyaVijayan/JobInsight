@@ -22,3 +22,6 @@ This application analyzes job descriptions to provide insights into the key skil
 Enter the job description in the provided text area and click the "Analyze" button.
 
 View the extracted keywords and their corresponding TF-IDF scores in the generated table.
+
+## Access
+Can access using: https://jobinsight.streamlit.app/.
