@@ -5,6 +5,7 @@ cachetools==5.3.3
 certifi==2024.2.2
 charset-normalizer==3.3.2
 click==8.1.7
+distlib==0.3.8
 filelock==3.13.1
 fsspec==2024.2.0
 gitdb==4.0.11
@@ -28,6 +29,8 @@ numpy==1.26.4
 packaging==23.2
 pandas==2.2.1
 pillow==10.2.0
+pipenv==2023.12.1
+platformdirs==4.2.0
 protobuf==4.25.3
 pyarrow==15.0.0
 pydeck==0.8.1b0
@@ -53,9 +56,9 @@ threadpoolctl==3.3.0
 tokenizers==0.15.2
 toml==0.10.2
 toolz==0.12.1
-torch==2.2.0
-torchaudio==2.2.0
-torchvision==0.17.0
+torch==2.1.1+cu118
+torchaudio==2.1.1+cu118
+torchvision==0.16.1+cu118
 tornado==6.4
 tqdm==4.66.2
 transformers==4.38.2
@@ -64,5 +67,6 @@ tzdata==2024.1
 tzlocal==5.2
 urllib3==2.2.1
 validators==0.22.0
+virtualenv==20.25.1
 watchdog==4.0.0
 zipp==3.17.0

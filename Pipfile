@@ -4,15 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-streamlit = "*"
-scikit-learn = "*"
-nltk = "*"
-torch = "==2.1.2"
-torchvision = "==0.16.2"
-torchaudio = "==2.1.2"
-pandas = "*"
-st-annotated-text = "*"
+torch = "==2.1.1"
+torchvision = "==0.16.1"
+torchaudio = "==2.1.1"
 transformers = "*"
+nltk = "*"
+pandas = "*"
+numpy = "*"
 
 [dev-packages]
 
