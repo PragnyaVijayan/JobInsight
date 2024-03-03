@@ -35,16 +35,16 @@ def main():
 
         # Create a DataFrame from the lists
         df = pd.DataFrame({"Word": words, "Score": counts})
-        df['Count'] = df['Count'].fillna(0)
+        df['Score'] = df['Score'].fillna(0)
 
         # Sort the DataFrame based on 'Count' in descending order
-        df = df.sort_values(by='Count', ascending=False)
+        df = df.sort_values(by='Score', ascending=False)
 
         # Create and display a table
         st.write("Keywords and Counts:")
         st.dataframe(df, use_container_width=True)
 
-        st.subheading('Your job description with keywords highlighted.')
+        st.subheader('Your job description with keywords highlighted.')
 
         highlighted_text = highlight_words_in_text(job_description, words, background="#FF0", color="black")
         st.markdown(str(highlighted_text), unsafe_allow_html=True)
