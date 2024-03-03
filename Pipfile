@@ -11,6 +11,7 @@ torch = "*"
 pandas = "*"
 st-annotated-text = "*"
 transformers = "*"
+torchvision = "*"
 
 [dev-packages]
 
